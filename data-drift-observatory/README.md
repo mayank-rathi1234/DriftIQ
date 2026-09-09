@@ -59,7 +59,7 @@ overall risk, feature drift, prediction drift, concept drift, affected
 features, and estimated accuracy degradation.
 
 <p align="center">
-  <img src="docs/images/dashboard-overview.png"
+  <img src="docs/images/dashboard-overview.png.png"
        alt="Data Drift Observatory - Model Health Dashboard"
        width="100%">
 </p>
@@ -70,7 +70,7 @@ The dashboard tracks drift metrics across production batches and allows
 inspection of how individual features behave over time.
 
 <p align="center">
-  <img src="docs/images/drift-metrics.png"
+  <img src="docs/images/drift-metrics.png.png"
        alt="Drift metric trends over time"
        width="100%">
 </p>
@@ -82,7 +82,7 @@ and mutual-information shift, providing signals that feature-drift tests
 alone cannot capture.
 
 <p align="center">
-  <img src="docs/images/concept-drift-signals.png"
+  <img src="docs/images/concept-drift-signals.png.png"
        alt="Concept drift signals"
        width="100%">
 </p>
