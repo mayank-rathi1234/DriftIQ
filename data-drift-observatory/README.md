@@ -52,6 +52,40 @@ TRAINING DATA → Baseline Profile → Trained ML Model (XGBoost)
               FastAPI service + Streamlit dashboard + MLflow logging
 ```
 
+## Dashboard
+
+The Streamlit dashboard provides an end-to-end Model Health Report, showing
+overall risk, feature drift, prediction drift, concept drift, affected
+features, and estimated accuracy degradation.
+
+<p align="center">
+  <img src="docs/images/dashboard-overview.png"
+       alt="Data Drift Observatory - Model Health Dashboard"
+       width="100%">
+</p>
+
+### Drift trends over time
+
+The dashboard tracks drift metrics across production batches and allows
+inspection of how individual features behave over time.
+
+<p align="center">
+  <img src="docs/images/drift-metrics.png"
+       alt="Drift metric trends over time"
+       width="100%">
+</p>
+
+### Concept drift monitoring
+
+Concept drift is monitored using domain-classifier AUC, correlation shift,
+and mutual-information shift, providing signals that feature-drift tests
+alone cannot capture.
+
+<p align="center">
+  <img src="docs/images/concept-drift-signals.png"
+       alt="Concept drift signals"
+       width="100%">
+</p>
 ## This project was built, then deliberately audited and fixed
 
 The first version of this project worked end-to-end but had five real bugs,
